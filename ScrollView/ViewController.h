@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+-(void)tapHandler:(UITapGestureRecognizer *)tap;
 
 @end
 

@@ -13,6 +13,7 @@
 		D9BCF52E1D909246004FE04B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BCF52C1D909246004FE04B /* Main.storyboard */; };
 		D9BCF5301D909246004FE04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BCF52F1D909246004FE04B /* Assets.xcassets */; };
 		D9BCF5331D909246004FE04B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BCF5311D909246004FE04B /* LaunchScreen.storyboard */; };
+		D9BCF53C1D90BDAF004FE04B /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BCF53B1D90BDAF004FE04B /* ImageDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D9BCF52F1D909246004FE04B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9BCF5321D909246004FE04B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9BCF5341D909246004FE04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9BCF53A1D90BDAF004FE04B /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
+		D9BCF53B1D90BDAF004FE04B /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				D9BCF5311D909246004FE04B /* LaunchScreen.storyboard */,
 				D9BCF5341D909246004FE04B /* Info.plist */,
 				D9BCF5231D909246004FE04B /* Supporting Files */,
+				D9BCF53A1D90BDAF004FE04B /* ImageDetailViewController.h */,
+				D9BCF53B1D90BDAF004FE04B /* ImageDetailViewController.m */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				D9BCF52B1D909246004FE04B /* ViewController.m in Sources */,
 				D9BCF5281D909246004FE04B /* AppDelegate.m in Sources */,
 				D9BCF5251D909246004FE04B /* main.m in Sources */,
+				D9BCF53C1D90BDAF004FE04B /* ImageDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
