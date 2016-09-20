@@ -18,10 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat scrollViewWidth = CGRectGetWidth(self.scrollView.frame);
-    CGFloat scrollViewHeight = CGRectGetHeight(self.scrollView.frame);
-    
-    
     UIImage *lighthouse = [UIImage imageNamed:@"Lighthouse"];
     UIImage *lighthouseAtNight = [UIImage imageNamed:@"Lighthouse-night"];
     UIImage *lighthouseInField = [UIImage imageNamed:@"Lighthouse-in-Field"];
