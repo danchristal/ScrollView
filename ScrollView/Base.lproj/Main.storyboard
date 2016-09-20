@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,20 +21,29 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEd-yF-aXd">
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Sna-8J-ziW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tqy-id-04h"/>
                                 </connections>
                             </scrollView>
+                            <pageControl alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tDg-6t-wIt">
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rEd-yF-aXd" secondAttribute="bottom" id="DXl-jh-FFZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tDg-6t-wIt" secondAttribute="bottom" constant="8" id="Fig-CC-602"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tDg-6t-wIt" secondAttribute="trailing" constant="137" id="G4f-fL-f5U"/>
                             <constraint firstAttribute="trailing" secondItem="rEd-yF-aXd" secondAttribute="trailing" id="I9H-zH-5Rt"/>
                             <constraint firstItem="rEd-yF-aXd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JX9-YM-RgK"/>
                             <constraint firstItem="rEd-yF-aXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OaT-FV-GFM"/>
                             <constraint firstItem="rEd-yF-aXd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Qha-Ds-bkw"/>
+                            <constraint firstItem="tDg-6t-wIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ulx-76-zQQ"/>
+                            <constraint firstItem="tDg-6t-wIt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="137" id="aYT-lQ-PRm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qne-xs-PsH"/>
                     <connections>
+                        <outlet property="pageControl" destination="tDg-6t-wIt" id="vnj-JA-mds"/>
                         <outlet property="scrollView" destination="rEd-yF-aXd" id="vi6-ib-6nl"/>
                         <segue destination="qw5-Kq-a6y" kind="show" identifier="showImageDetail" id="5ng-5k-Ntx"/>
                     </connections>

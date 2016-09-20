@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIImageView *lighthouseInFieldImageView;
 
 @property (nonatomic, strong) UIImage *showDetailImage;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 
 @end
@@ -179,6 +180,13 @@
     }
     
     
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat pageWidth = self.scrollView.frame.size.width;
+    float fractionalPage = self.scrollView.contentOffset.x / pageWidth;
+    NSInteger page = lround(fractionalPage);
+    self.pageControl.currentPage = page;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
